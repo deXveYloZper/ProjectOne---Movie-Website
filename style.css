@@ -101,14 +101,17 @@ body{
     cursor: pointer;  
 }
 
+/*HERO SECTION DESIGN*/
 .heroContainer{
     background-color: #151515;
-    height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
 }
 .heroContainerContent{
     color: white;
     padding-left: 50px;
 }
+
+/*FEATURED SECTION DESIGN*/
 .featuredContent{
     height: 50vh;
     padding: 50px;
@@ -129,4 +132,70 @@ body{
     outline: none;
     padding: 10px 20px;
     font-weight: bold;
+}
+
+/*MOVIE LIST SECTION DESIGN*/
+.movieListContainer{
+    padding: 20px;
+}
+.movieListTitle{}
+.movieListWrapper{}
+.movieList{
+    display: flex;
+    align-items: center;
+    height: 300px;
+}
+.movieListItem{
+    margin-right: 30px;
+    position: relative;
+}
+.movieListItem:hover .movieListItemIMG{
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+}
+.movieListItem:hover .movieListItemTitle,
+.movieListItem:hover .movieListItemDesc,
+.movieListItem:hover .movieListItemButton{
+    opacity: 1;
+} 
+.movieListItemIMG{
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+}
+.movieListItemTitle{
+    position: absolute;
+    padding: 0 10px;
+    top: 10%;
+    left: 50px;
+    font-size: 32px;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.movieListItemDesc{
+    position: absolute;
+    padding: 10px;
+    top: 30%;
+    left: 50px;
+    font-size: 14px;
+    width: 230px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.movieListItemButton{
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #4dbf00;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
 }
