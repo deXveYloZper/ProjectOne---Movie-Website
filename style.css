@@ -168,9 +168,9 @@ body{
 .movieListItemTitle{
     position: absolute;
     padding: 0 10px;
-    top: 10%;
-    left: 50px;
-    font-size: 32px;
+    top: 5%;
+    left: 30px;
+    font-size: 24px;
     font-weight: bold;
     opacity: 0;
     transition: all 1s ease-in-out;
@@ -178,8 +178,8 @@ body{
 .movieListItemDesc{
     position: absolute;
     padding: 10px;
-    top: 30%;
-    left: 50px;
+    top: 20%;
+    left: 30px;
     font-size: 14px;
     width: 230px;
     opacity: 0;
@@ -195,7 +195,7 @@ body{
     background-color: #4dbf00;
     position: absolute;
     bottom: 20px;
-    left: 50px;
+    left: 30px;
     opacity: 0;
     transition: all 1s ease-in-out;
 }
