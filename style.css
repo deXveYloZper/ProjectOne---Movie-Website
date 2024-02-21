@@ -136,14 +136,19 @@ body{
 
 /*MOVIE LIST SECTION DESIGN*/
 .movieListContainer{
-    padding: 20px;
+    padding: 0 20px;
 }
 .movieListTitle{}
-.movieListWrapper{}
+.movieListWrapper{
+    position: relative;
+    overflow: hidden;
+}
 .movieList{
     display: flex;
     align-items: center;
     height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
 }
 .movieListItem{
     margin-right: 30px;
@@ -198,4 +203,13 @@ body{
     left: 30px;
     opacity: 0;
     transition: all 1s ease-in-out;
+}
+.movieListCarouselArrow{
+    font-size: 90px;
+    position: absolute;
+    top: 35%;
+    right: 0;
+    color: lightgrey;
+    opacity: .5;
+    cursor: pointer;
 }
