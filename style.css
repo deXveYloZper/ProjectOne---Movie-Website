@@ -169,6 +169,7 @@ body{
     width: 270px;
     height: 200px;
     object-fit: cover;
+    border-radius: 20px;
 }
 .movieListItemTitle{
     position: absolute;

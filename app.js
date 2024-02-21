@@ -83,7 +83,7 @@ const arrows = document.querySelectorAll(".movieListCarouselArrow");
 const movieLists = document.querySelectorAll(".movieList")
 
 arrows.forEach((arrow, index) =>{
-    arrow.addEventListener("click", ()=>{
-        movieLists[i].style.transform = `translateX(${movieLists[i].computedStyleMap().get("transform")[0].x.value-300}px)`
+    arrow.addEventListener("click", () => {
+        movieLists[index].style.transform = `translateX(${movieLists[index].computedStyleMap().get("transform")[0].x.value-300}px)`
     })
 })
