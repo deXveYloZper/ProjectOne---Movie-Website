@@ -83,11 +83,11 @@ const arrows = document.querySelectorAll(".movieListCarouselArrow");
 const movieLists = document.querySelectorAll(".movieList")
 
 arrows.forEach((arrow, index) =>{
-    const movieListLength = movieLists[index].querySelectorAll("movieListItemIMG").length;
+    const movieListLength = movies.length
     let clickCounter = 0 
     arrow.addEventListener("click", () => {
         clickCounter++
-        if (movieListLength - (9 + clickCounter) >=0 ){
+        if (movieListLength - (6 + clickCounter) >=0 ){
 
             movieLists[index].style.transform = `translateX(${movieLists[index].computedStyleMap().get("transform")[0].x.value-300}px)`
         } else{
