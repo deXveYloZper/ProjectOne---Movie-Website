@@ -86,8 +86,9 @@ arrows.forEach((arrow, index) =>{
     const movieListLength = movies.length
     let clickCounter = 0 
     arrow.addEventListener("click", () => {
+        const ratio = Math.floor(window.innerWidth / 270)
         clickCounter++
-        if (movieListLength - (6 + clickCounter) >=0 ){
+        if (movieListLength - (6 + clickCounter) + (6 - ratio) >=0 ){
 
             movieLists[index].style.transform = `translateX(${movieLists[index].computedStyleMap().get("transform")[0].x.value-300}px)`
         } else{
@@ -95,4 +96,16 @@ arrows.forEach((arrow, index) =>{
             clickCounter = 0
         }
     })
+})
+
+//dark and white switching function
+
+const toggle = document.querySelector(".toggleSwitch")
+const items = document.querySelectorAll(".navbarContainer,.sidebar,.sidebrIcon,.movieListTitle,.movieListContainer,.toggle,.heroContainerContent")
+
+toggle.addEventListener("click",()=>{
+    items.forEach(item=>{
+        item.classList.toggle("active")
+    })
+    toggle.classList.toggle("active")
 })
