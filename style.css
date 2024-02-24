@@ -265,4 +265,19 @@ body{
     .menuContainer{
         display: none;
     }
+    .featuredContent{
+        height: 30vh;
+        padding: 50px;
+    }
+    .featuredContentTitle{
+        width: 100px;
+        margin-left: -20px;
+        margin-top: -20px;
+        margin-bottom: 25px;   
+    }
+    .featuredContentDesc{
+        width: 250px;
+        color: lightgray;
+        margin: 30px 0;
+    }
 }
